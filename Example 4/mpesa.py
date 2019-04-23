@@ -10,7 +10,7 @@ class Mpesa_Account:
 		print ("Dear {}, you have successfuly deposited Ksh{} into your account {}. Your new M-pesa balance is Ksh{}.".format(self.name,amount,self.phone_number,self.balance))
 		
 	def withdraw(self,amount):
-		if self.balance>amount:
+		if (self.balance>amount):
 			self.balance = self.balance - amount
 			print ("Dear {}, you have successfully withdrawn Ksh{} from your account {}. Your new M-pesa balance is Ksh{}.".format(self.name,amount,self.phone_number,self.balance))
 		else:
