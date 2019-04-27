@@ -37,7 +37,7 @@ class Mpesa_Account:
 			self.balance=self.balance+amount
 			print("Hello {}! You have qualified for the loan of Ksh{}. Your new balance is Ksh{}.".format(self.name,self.loan,self.balance))
 		else:
-			print("Sorry {}, you do not qualify for a loan at this time. To qualify, you should have depositted 5 times or more and have no existing loan. The maximum you can borrow is a third of the total deposits you have made so far.".format(self.name,len(self.deposits)))	
+			print("Sorry {}, you do not qualify for a loan at this time. To qualify, you should have deposited 5 times or more and have no existing loan. The maximum you can borrow is a third of the total deposits you have made so far.".format(self.name))	
 
 	def repay_loan(self,amount):
 		if self.loan==0:
