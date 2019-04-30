@@ -79,7 +79,7 @@ class Mpesa_Account:
 			print("You have fully repaid your loan of {}. Your new account balance is Ksh{}. You can now borrow again.".format(amount,self.balance))	
 		elif amount>self.loan:
 			now = datetime.now()
-			object = {"time":now,"amount":self.loan}
+			object = {"time":now,"amount":amount}
 			self.loanspaid.append(object)
 			excess = amount - self.loan
 			self.balance=self.balance-amount
